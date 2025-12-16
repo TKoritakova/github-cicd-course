@@ -63,7 +63,7 @@ jobs:
       app:
         image: ${{ needs.docker.outputs.image }}
         ports:
-          - 8080:8080
+          - 8080:80
 
     steps:
       - name: Wait for service
